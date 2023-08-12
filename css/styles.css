@@ -36,6 +36,11 @@ nav {
     max-width: 850px;
 }
 
+nav a {
+    font-size: 40px;
+    font-weight: 700;
+}
+
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -48,10 +53,7 @@ nav ul {
 
 /*index*/
 
-.nav-index a {
-    font-size: 40px;
-    font-weight: 700;
-}
+
 
 .main-index {
     display: flex;
@@ -65,5 +67,7 @@ nav ul {
     font-size: 40px;
     font-weight: 400;
 }
+
+/*ingreso-tareas*/
 
 
