@@ -1,0 +1,11 @@
+/*GLOBALES*/
+:root {
+    --verde: #bcef4b;
+    --amarillo: #fef752;
+    --rojo: #ff0534;
+}
+
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+
