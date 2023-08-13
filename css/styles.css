@@ -110,7 +110,7 @@ footer {
     max-width: 300px;
     max-height: 300px;
     overflow-y: scroll;
-    display: none;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
