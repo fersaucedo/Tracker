@@ -5,6 +5,7 @@
     --rojo: #ff0534;
     --negro: #1f1f1f;
     --blanco: #ffffff;
+    --rosa : #b32580;
 }
 
 html{
@@ -14,10 +15,12 @@ html{
 
 body {
 height: 100vh;
+max-height: 100vh;
 background-color: var(--negro);
 color: var(--blanco);
 display: flex;
 flex-direction: column;
+overflow-y: scroll;
 }
 
 li {
@@ -50,10 +53,21 @@ nav ul {
     padding: 20px;
 }
 
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid var(--verde);
+    text-transform: none;
+    font-size: 15px;
+}
 
 /*index*/
 
-
+.nav-index ul li img {
+    width: 60px;
+    height: 60px;
+}
 
 .main-index {
     display: flex;
@@ -70,4 +84,69 @@ nav ul {
 
 /*ingreso-tareas*/
 
+.form-ingreso {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    margin: 30px auto;
+}
 
+.titulo-tarea {
+    padding: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.boton-icono,
+.boton-tiempo,
+.boton-agregar {
+    padding: 10px;
+    font-weight: 500;
+}
+
+/*<--------------------------->*/
+.contenedor-icono {
+    max-width: 300px;
+    max-height: 300px;
+    overflow-y: scroll;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    background-color: #ffffff;
+}
+/*<--------------------------->*/
+
+.contenedor-icono img {
+    width: 80px;
+}
+
+.dropdown {
+    background-color: #bcef4b;
+    margin-top: 20px;
+}
+
+.contenedor-dropdown {
+    max-height: 100px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 0;
+    margin: 5px;
+}
+
+.boton-agregar {
+    margin-top: 20px;
+}
+
+.titulo-tarea,
+.boton-icono,
+.contenedor-icono,
+.boton-tiempo,
+.dropdown,
+.boton-agregar {
+    border-radius: 15px;
+}
