@@ -151,14 +151,16 @@ footer {
 
 /*<--------------------------->*/
 .contenedor-icono {
-    max-width: 300px;
+    display: none;
+    max-width: 200px;
     max-height: 300px;
     overflow-y: scroll;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
     background-color: var(--gris);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 /*<--------------------------->*/
 
@@ -174,7 +176,7 @@ footer {
 .contenedor-dropdown {
     max-height: 80px;
     overflow-y: scroll;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -187,7 +189,6 @@ footer {
 
 .titulo-tarea,
 .boton-icono,
-.contenedor-icono,
 .boton-tiempo,
 .dropdown,
 .boton-agregar {
