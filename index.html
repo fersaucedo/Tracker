@@ -20,18 +20,77 @@
 </head>
 
 <body>
+
+
     <header>
+
         <nav class="nav-index">
-            <ul>
-                <li><img src="./img/user.png" alt="foto de usuario"></li>
-                <li><a href="./pages/ingreso-tareas.html">+</a></li>
+
+            <ul class="ul-nav">
+
+                <li><button class="boton-plus">+</button></li>
+
             </ul>
+
         </nav>
+
     </header>
 
-    <main class="main-index">
-        <!-- <h1>No hay tareas pendientes</h1> -->
-        <ul class="lista-index">
+    <main>
+
+        <!-- <h1 class="h1">No hay tareas pendientes</h1> -->
+
+        <form class="d-none">
+
+            <input type="text" class="titulo-tarea" placeholder="INGRESA UNA TAREA" autocomplete="off">
+
+            <input type="button" class="boton-icono" value="SELECCIONAR ICONO">
+
+            <div class="contenedor-icono d-none">
+                <img src="../img/angel.png" alt="icono de angel" id="icono1">
+                <img src="../img/angry.png" alt="icono de enojado" id="icono2">
+                <img src="../img/annoyed.png" alt="icono de molesto" id="icono3">
+                <img src="../img/bored.png" alt="icono de aburrido" id="icono4">
+                <img src="../img/cool.png" alt="icono de facha" id="icono5">
+                <img src="../img/cry.png" alt="icono de llorar" id="icono6">
+                <img src="../img/devil.png" alt="icono de diablo" id="icono7">
+                <img src="../img/dizzy.png" alt="icono de mareado" id="icono8">
+                <img src="../img/emoticon.png" alt="icono de emoticon" id="icono9">
+                <img src="../img/excited.png" alt="icono de emocionado" id="icono10">
+                <img src="../img/happy.png" alt="icono de feliz" id="icono11">
+                <img src="../img/hungry.png" alt="icono de hambriento" id="icono12">
+                <img src="../img/in-love.png" alt="icono de enamorado" id="icono13">
+                <img src="../img/party.png" alt="icono de fiesta" id="icono14">
+                <img src="../img/shocked.png" alt="icono de shock" id="icono15">
+                <img src="../img/sick.png" alt="icono de enfermo" id="icono16">
+                <img src="../img/sleepy.png" alt="icono de dormido" id="icono17">
+                <img src="../img/surprised.png" alt="icono de sorprendido" id="icono18">
+                <img src="../img/thinking.png" alt="icono de pensante" id="icono19">
+                <img src="../img/wink.png" alt="icono de guiño" id="icono20">
+
+            </div>
+
+            <div class="dropdown">
+
+                <label>Recordar en:</label>
+
+                <select name="tiempo" id="tiempo" class="contenedor-dropdown">
+                    <option value="1">1 día</option>
+                    <option value="2">2 días</option>
+                    <option value="3">3 días</option>
+                    <option value="4">4 días</option>
+                    <option value="5">5 días</option>
+                    <option value="6">6 días</option>
+                    <option value="7">7 días</option>
+                </select>
+
+            </div>
+
+            <button class="boton-agregar">AGREGAR TAREA</button>
+
+        </form>
+
+        <ul class="lista-index d-flex">
             <!-- <li>
                     <div class="tarea">
                         <img src="./img/icons/hungry.png" alt="">
@@ -42,15 +101,15 @@
                     </div>
 
                 </li> -->
-
-
-
         </ul>
+
+
     </main>
-    <footer>
-        <p>
-            ©2023 Fernando Saucedo.
-        </p>
+
+    <footer class="fijo">
+
+        <p>©2023 Fernando Saucedo.</p>
+
         <a href="https://github.com/fersaucedo" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24"
                 height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
@@ -60,9 +119,13 @@
                     d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
             </svg>
         </a>
+
     </footer>
 
+
     <script src="./js/main.js"></script>
+
+
 </body>
 
 </html>
