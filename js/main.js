@@ -13,20 +13,35 @@ let iconoSeleccionado = null;
 
 //FUNCIONES
 
+//funcion reset
+function reset() {
+  inputTarea.value = "";
+  ulNav.style.justifyContent = "flex-end";
+  botonPlus.textContent = "+";
+  contenedorIcono.classList.toggle("d-none");
+  listaIndex.classList.remove("d-none");
+}
+
 //funcion evento para mostrar
 function mostrar(boton, contenedor) {
   boton.addEventListener("click", () => {
-    contenedor.classList.toggle("d-flex");
+    contenedor.classList.toggle("d-none");
   });
 }
 mostrar(botonIcono, contenedorIcono);
 mostrar(botonPlus, form);
 mostrar(botonPlus, listaIndex);
+mostrar(botonAgregar, form);
+
 
 //funcion para el boton que muestra el form y transforma el boton
 function botonTransform(contenedor) {
+
   botonPlus.addEventListener("click", () => {
+
+    
     const parametro = getComputedStyle(contenedor);
+
     if (parametro.justifyContent == "flex-end") {
       contenedor.style.justifyContent = "flex-start";
     } else {
@@ -42,17 +57,18 @@ function botonTransform(contenedor) {
 }
 botonTransform(ulNav);
 
+
+
 //funcion evento para guardar la imagen en una variable
 let seleccionIcono = () => {
   let iconos = contenedorIcono.querySelectorAll("img");
 
-  iconos.forEach((icono) => {
-    icono.addEventListener("click", () => {
 
-      iconos.forEach((icono) => {
-        icono.style.backgroundColor = 'transparent';
-      });
-      
+  iconos.forEach((icono) => {
+
+    icono.style.backgroundColor = 'transparent';
+
+    icono.addEventListener("click", () => {
       iconoSeleccionado = icono.src;
       icono.style.backgroundColor = 'var(--verde)';
     });
@@ -81,11 +97,14 @@ function tarea() {
 }
 
 let agregarTarea = () => {
+  
   botonAgregar.addEventListener("click", (e) => {
     e.preventDefault();
     tarea();
-    inputTarea.value = "";
+    reset();
   });
 };
+
+agregarTarea();
 
 //EVENTOS

@@ -158,7 +158,6 @@ img,
 
 /*INDEX */
 .lista-index {
-    display: none;
     flex-direction: column;
     gap: 10px;
     overflow-y: scroll;
@@ -203,8 +202,4 @@ img,
 .fijo {
     position: fixed;
     bottom: 0;
-}
-
-.d-flex {
-    display: flex;
 }
