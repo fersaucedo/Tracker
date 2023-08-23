@@ -75,13 +75,14 @@
                 <label>Recordar en:</label>
 
                 <select name="tiempo" id="tiempo" class="contenedor-dropdown">
-                    <option value="1">1 día</option>
-                    <option value="2">2 días</option>
-                    <option value="3">3 días</option>
-                    <option value="4">4 días</option>
-                    <option value="5">5 días</option>
-                    <option value="6">6 días</option>
-                    <option value="7">7 días</option>
+                    <option value="null">0 días</option>
+                    <option value="86400000">1 día</option>
+                    <option value="172800000">2 días</option>
+                    <option value="259200000">3 días</option>
+                    <option value="345600000">4 días</option>
+                    <option value="432000000">5 días</option>
+                    <option value="518400000">6 días</option>
+                    <option value="604800000">7 días</option>
                 </select>
 
             </div>
@@ -91,7 +92,7 @@
         </form>
 
         <ul class="lista-index d-none ">
-                <!-- <li class="tarea">
+            <!-- <li class="tarea">
                         <img src="./img/hungry.png" alt="">
                         <div>
                             <h1>prender moto</h1>
