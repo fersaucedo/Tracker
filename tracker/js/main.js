@@ -140,6 +140,8 @@ let agregarTarea = () => {
     if (tiempoSeleccionado !== null || iconoSeleccionado !== null) {
       tarea(tiempoFaltante);
       reset();
+      let h1 = document.querySelector("h1");
+      h1.classList.add("d-none");
     } else {
       alert("Por favor, selecciona una opción.");
     }

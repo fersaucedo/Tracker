@@ -64,10 +64,6 @@ a:visited {
     cursor: pointer;
 }
 
-.h1 {
-    flex-direction: column;
-}
-
 footer {
     width: 100%;
     display: flex;
@@ -158,6 +154,7 @@ img,
 
 /*INDEX */
 .lista-index {
+    display: flex;
     flex-direction: column;
     gap: 10px;
     overflow-y: scroll;
